@@ -2,24 +2,29 @@ import React from 'react';
 
 import avatar from '../../assets/pictures/picture.png';
 
+import Footer from '../../components/Footer';
+import Navbar from '../../components/Navbar';
+
 import {
-  Container, Title, Description, AboutContainer, Button, Wrapper, Avatar,
+  Title,
+  Description,
+  Avatar,
+  ButtonLink,
+  HomeContainer,
 } from './style';
 
 const Home: React.FC = () => (
   <>
-    <Container>
-      <Avatar src={avatar} />
+    <Navbar />
+    <HomeContainer>
+      <Avatar src={avatar} title="profile" alt="profile" />
       <Title>Hey, I am Vitor</Title>
-      <AboutContainer>
-        <Description>
-          Welcome to my portfolio, here you can contact me and see my projects!
-        </Description>
-      </AboutContainer>
-    </Container>
-    <Wrapper>
-      <Button>Contact Me</Button>
-    </Wrapper>
+      <Description>
+        Welcome to my portfolio, here you can contact me and see my projects!
+      </Description>
+      <ButtonLink to="/contact">Contact</ButtonLink>
+    </HomeContainer>
+    <Footer />
   </>
 );
 

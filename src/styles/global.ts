@@ -11,6 +11,11 @@ export default createGlobalStyle`
     outline: 0;
   }
 
+  body {
+    background: #fff;
+    font-family: sans-serif;
+  }
+
   a {
     text-decoration: none;
   }

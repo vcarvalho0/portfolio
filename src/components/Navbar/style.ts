@@ -3,22 +3,21 @@ import styled from 'styled-components';
 import { NavLink as Link } from 'react-router-dom';
 
 export const Nav = styled.div`
-  padding: 0 2rem;
-  background: #F8F8F8;
+  width: 100%;
+  padding: 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  box-shadow: 0 2px 2px -2px gray;
+  flex-direction: row;
+  box-shadow: 0 2px 5px -5px ${(props) => props.theme.colors.gray};
 `;
 
 export const Title = styled.h1`
-  font-family: sans-serif;
-  color: black;
-  font-size: 15px;
+  color: ${(props) => props.theme.colors.secondary};
+  font-size: 20px;
 
   &:hover {
-    color: #585858;
+    color: ${(props) => props.theme.colors.gray};
   }
 `;
 
@@ -27,23 +26,17 @@ export const NavMenu = styled.div`
   justify-content: space-between;
   align-items: center;
   position: relative;
-
-  @media (max-width: 768px) {
-    overflow: hidden;
-    flex-direction: column;
-    width: 100%;
-  }
 `;
 
 export const NavLink = styled(Link)`
-  font-family: sans-serif;
-  padding: 1rem 1rem;
+  padding: 20px 15px;
   cursor: pointer;
-  color: black;
-  font-size: 13px;
+  color: ${(props) => props.theme.colors.gray};
+  font-size: 18px;
   text-align: center;
 
   &:hover {
-    color: #585858;
+    color: ${(props) => props.theme.colors.secondary};
+    transition: 150ms ease-in;
   }
 `;
