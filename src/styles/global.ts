@@ -12,12 +12,14 @@ export default createGlobalStyle`
   }
 
   body {
-    background: #fff;
+    background: ${(props) => props.theme.colors.background};
+    color: ${(props) => props.theme.colors.text};
     font-family: sans-serif;
   }
 
   a {
     text-decoration: none;
+    color: ${(props) => props.theme.colors.secondary};
   }
 
   ul {

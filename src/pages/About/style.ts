@@ -23,17 +23,23 @@ export const Container = styled.div`
     margin-top: 20px;
     font-size: 25px;
   }
+
+  @media screen and (max-width: 425px) {
+    width: 100%;
+  }
 `;
 
 export const Title = styled.h1`
   font-size: 45px;
-  color: black;
+  color: ${(props) => props.theme.colors.text};
   padding-top: 30px;
 `;
 
 export const Description = styled.div`
   padding: 15px;
   font-size: 24px;
+  margin-left: 20%;
+  margin-right: 20%;
 
   @media screen and (max-width: 768px) {
     font-size: 20px;

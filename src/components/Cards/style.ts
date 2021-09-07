@@ -36,7 +36,7 @@ export const CardText = styled.div`
   margin: 2px;
 
   > p {
-    color: grey;
+    color: ${(props) => props.theme.colors.text};
     font-size: 20px;
     font-weight: 300;
     margin-top: 15px;
@@ -45,7 +45,7 @@ export const CardText = styled.div`
   > h2 {
     margin-top: 0px;
     font-size: 28px;
-    color: #333;
+    color: ${(props) => props.theme.colors.text};
   }
 `;
 
@@ -53,7 +53,7 @@ export const Icon = styled(SiGithub)`
   width: 40px;
   height: 40px;
   margin: 10px;
-  color: black;
+  color: ${(props) => props.theme.colors.secondary};
 
   &:hover {
     color: gray;

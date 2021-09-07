@@ -8,17 +8,15 @@ import {
 
 import dog from '../../assets/pictures/picture.png';
 
-import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
 const Projects: React.FC = () => (
   <>
-    <Navbar />
     <CardContainer>
       <CardContainer>
-        <Card name="discord-bot" text="Feito em Javascript" img={dog} link="vcarvalho0" />
-        <Card name="portfolio" text="Confira o codigo deste projeto" img={dog} link="vcarvalho0" />
-        <Card name="node-api" text="Confira o codigo deste projeto" img={dog} link="vcarvalho0" />
+        <Card name="discord-bot" img={dog} link="vcarvalho0" />
+        <Card name="portfolio" img={dog} link="vcarvalho0" />
+        <Card name="node-api" img={dog} link="vcarvalho0" />
       </CardContainer>
     </CardContainer>
     <Footer />

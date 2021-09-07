@@ -21,8 +21,8 @@ export const Avatar = styled.img`
 `;
 
 export const ButtonLink = styled(Link)`
-  color: black;
-  background: white;
+  color: ${((props) => props.theme.colors.blue)};
+  background: ${((props) => props.theme.colors.primary)};
   font-size: 20px;
   padding: 10px 30px;
   margin: 20px;

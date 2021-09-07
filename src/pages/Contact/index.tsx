@@ -1,6 +1,6 @@
 import React from 'react';
+
 import Footer from '../../components/Footer';
-import Navbar from '../../components/Navbar';
 
 import {
   ContactContainer, ContactCard, CardText, MailIcon,
@@ -8,7 +8,6 @@ import {
 
 const Contact: React.FC = () => (
   <>
-    <Navbar />
     <ContactContainer>
       <ContactCard>
         <CardText>

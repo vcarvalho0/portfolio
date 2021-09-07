@@ -7,11 +7,10 @@ import {
 export const Container = styled.div`
   width: 100%;
   display: flex;
-  background: white;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: #fff;
+  background: ${(props) => props.theme.colors.primary};
   box-shadow: 0 -4px 3px -5px gray;
 `;
 

@@ -8,19 +8,17 @@ import {
 
 interface CardProps {
   name: string;
-  text: string;
   img: string;
   link: string;
 }
 
 const Card: React.FC<CardProps> = ({
   // eslint-disable-next-line react/prop-types
-  name, text, link,
+  name, link,
 }) => (
   <Cards>
     <CardText>
       <h2>{name}</h2>
-      <p>{text}</p>
     </CardText>
     <Link to={{ pathname: `https://github.com/vcarvalho0/${link}` }} target="_blank" rel="nopener noreferrer">
       <Icon />

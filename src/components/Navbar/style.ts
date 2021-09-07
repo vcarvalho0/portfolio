@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import { NavLink as Link } from 'react-router-dom';
-
 export const Nav = styled.div`
   width: 100%;
   padding: 0 30px;
@@ -28,10 +26,9 @@ export const NavMenu = styled.div`
   position: relative;
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled.div`
   padding: 20px 15px;
   cursor: pointer;
-  color: ${(props) => props.theme.colors.gray};
   font-size: 18px;
   text-align: center;
 
